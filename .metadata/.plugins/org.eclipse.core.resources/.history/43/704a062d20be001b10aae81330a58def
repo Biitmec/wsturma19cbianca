@@ -1,0 +1,27 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploWhile {
+
+	public static void main(String[] args) {
+
+		String email = JOptionPane.showInputDialog("Digite o email").toLowerCase();
+
+
+		/*if(email.contains("@")==false) 
+		 * email = JOptionPane.showInputDialog("Digite novamente, e-mail inválido").toLowerCase();
+		 */
+
+		while (email.contains("@")==false | email.indexOf("@")<2){
+					
+			email = JOptionPane.showInputDialog("Digite novamente, e-mail inválido").toLowerCase();
+		}
+		System.out.println("Usuário: " + email.substring(0,email.indexOf("@")));
+
+		while (true) {
+			System.out.println("teste");
+		}
+	}
+
+}

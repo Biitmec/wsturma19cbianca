@@ -1,0 +1,38 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		/*
+		 * Capturem separamdamente dia mes e ano
+		 * Para o dia somente será aceito a qtde de dias de acordo com o mes
+		 * (fev - 29 dias)
+		 * Para o mês aceite somente valores entre 1 e 12
+		 * Para o ano aceite somente valores entre 2003 e 1920
+		 * no final exibir a data completa
+		 */
+		
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Digite o Dia: "));
+		int mes = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês: "));
+		int ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano :"));
+		
+		while (dia==31 && mes==2 && mes==3 && mes==5 && mes==7 && mes==9 && mes==11);
+		{
+			System.out.println("Digite uma data válida");
+		while (dia==30 && mes==1 && mes==2 && mes==4 && mes==6 && mes==8 && mes==10 && mes==12);
+		{
+			System.out.println("Digite uma data válida");
+		}
+		while(mes<1 && mes>12) {
+			System.out.println("Digite uma data válida");
+		}
+		while (ano<1920 && ano>2003) {
+			System.out.println("Digite uma data válida");
+		}
+		System.out.println("Data validada: " + dia / mes / ano);
+		}
+				
+	}
+}

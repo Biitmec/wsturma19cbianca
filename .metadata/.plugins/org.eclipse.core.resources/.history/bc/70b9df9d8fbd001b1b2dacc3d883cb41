@@ -1,0 +1,30 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio3 {
+	
+	public static void main(String[] args) {
+		
+		Spring nome = JOptionPane.showInputDialog("Qual seu nome?");
+		double salario = Double.parseDouble(JOptionPane.showInputDialog("Qual seu salário?"));
+		byte faltas = Byte.parseByte(JOptionPane.showInputDialog("Quantas faltas você tem?"));
+		if (faltas==0)
+		{
+		double salario2 = salario*1.02;
+		}
+		else {
+			double salario2 = salario;
+			
+		}
+		if
+		System.out.println (nome + "Seu salário bruto é:" + salario2);
+		System.out.println
+		
+		System.out.println(nome + "Seu salário bruto é:" + salario*1.02);
+		if (salario)
+		System.out.println(nome + "Salario líquido é..:" + salario*1.02*)
+	}
+		
+
+}

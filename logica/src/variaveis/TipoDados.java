@@ -1,0 +1,75 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+//swing em Java significa tela
+
+public class TipoDados {
+	
+	public static void main(String[] args) {
+		
+		//Sintaxe: <tipo de dado> <nome da variavel> = <dado>;
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome");
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade"));
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Digite sua altura"));
+		double peso= Double.parseDouble(JOptionPane.showInputDialog("Peso"));
+		double imc = peso / (altura * altura);
+		
+		System.out.println("Nome...: " + nome);
+		System.out.println("Idade..: " + idade);
+		System.out.println("Altura.: " + altura);
+		System.out.println("IMC....:" + imc);
+		
+		
+				
+	}
+		
+		//println ele mostra o resultado e quebra a linha
+		//fora do IDE, você abre o prompt de comando: cd desktop
+		
+	
+		
+		
+		/*
+		 * Tipo de dados:
+		 * 
+		 * Alfanumérico: é um texto, parte de um texto ou um número
+		 * que não será utilizado em operações matemáticas. 
+		 * CEP - RH do itaú
+		 * Em javanês: String
+		 * 
+		 * Númerico: representa um dado que PODE ser utilizado em
+		 * expressões matematicas.
+		 * CEP por conceito é alfanumérico, porém no contexto de performance
+		 * e importancia dentro de um lugar (ex correios), é necessário colocar como numérico
+		 * por isso em alguns sites eles pedem pra não colocar ponto e traço no CEP
+		 * pede para incluir somente números
+		 * Já no RH do Itaú, que o CEP n tem importância, é incluido como alfanumérico
+		 * CPF no contexto da receita federal
+		 * Funcional - colaboradores Itaú
+		 * RM - alunos das faculdades
+		 * Definir número em Javanês:
+		 * - int => para reprsentação de números inteiros
+		 * - double => para números reais (com casas decimais)
+		 */
+		
+	
+		
+		
+	}
+
+	//Em uma classe encontramos: métodos e atributos
+	//toda classe começa com letra maiuscula
+	//main() é o start point de uma aplicação java
+	/*
+	 * JVM é o interpretador do Java
+	 * JRE é o ambiente de execução
+	 * JDK é o ambiente para desenvolvimento Java
+	 * Barra e asterisco abre bloco de notas
+	 * main ctrl espaço enter para colocar o public static
+	 * O ponto de partida das classes é o main, por isso precisa dele
+	 * ctrl shift s - salva o doc
+	 */
+	
+	

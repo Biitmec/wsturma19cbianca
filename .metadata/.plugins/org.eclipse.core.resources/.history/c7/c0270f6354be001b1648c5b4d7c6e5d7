@@ -1,0 +1,8 @@
+package decisao;
+
+public class Snippet {
+	public static void main(String[] args) {
+		import javax.swing.JOptionPane;
+	}
+}
+
